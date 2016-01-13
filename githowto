@@ -1,0 +1,19 @@
+initially we have a test.git with master
+git branch dev master
+
+
+now we have dev master branches
+The full steps is
+1. modify dev branch
+2. add commit push dev
+3. git branch release/v1.6 dev
+4. add commit push release/v1.6
+5. modify dev file and add commit push
+6. git checkout release/v1.6
+7. git merge dev  (u will show the result commit to release/v1.6 branch)
+8. git commit push release/v1.6
+
+delete branch
+git branch -D branch_name (Local)
+git push origin :heads/branch_name (Remote) 
+
